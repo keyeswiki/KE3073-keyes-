@@ -151,12 +151,12 @@ WiFi频率范围：2.4 GHz ~ 2.5 GHz
 
 ```Python
 print("Hello World!")
-print("Welcome to Keyestudio")
+print("Welcome to keyes ")
 ```
 
 5. 项目现象：
  
-利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：“Shell”窗口打印出“Hello World!”、“Welcome to Keyestudio”。
+利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：“Shell”窗口打印出“Hello World!”、“Welcome to keyes ”。
 
 ![图片不存在](./media/917161f13080342b1d2da97510719861.png)
 
