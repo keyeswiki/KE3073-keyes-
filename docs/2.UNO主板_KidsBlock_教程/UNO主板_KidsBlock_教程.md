@@ -10,7 +10,7 @@
 
 Keyes Plus主板完全兼容Arduino IDE开发环境的控制板，包含Arduino UNO R3的所有功能，并且在UNO R3主板的基础上，我们做了一些改进，使它的功能更加强大。它是学习如何构建电路和设计自己的代码的最好的选择，让我们得到更详细的相关信息：
 
-![图片不存在](./media/77250d57a198d46efca96c11c454cbad.png)
+![](./media/77250d57a198d46efca96c11c454cbad.png)
 
 ---
 
@@ -46,7 +46,7 @@ EEPROM:	1 KB (ATMEGA328P-AU)
 
 **各个接口和主要元件说明：**
 
-![图片不存在](./media/3d99ddd4f6774bcb2f2bef460fed121c.png)
+![](./media/3d99ddd4f6774bcb2f2bef460fed121c.png)
 
 **特殊功能接口说明：**
 
@@ -80,43 +80,43 @@ IIC通信端口：A4为SDA，A5为SCL
 
 2. 项目元件：
 
-| ![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)| ![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png) |
+| ![](./media/fc2db3f45232d5e01df879432330c47e.png)| ![](./media/86acd6d2f757c33fd22aee0522c5a2df.png) |
 | :--: | :--: |
 |Plus主板*1 | MicroUSB线*1 |
 
 3. 项目接线：
 
-![图片不存在](./media/0b4fed406b391c74a7c2e419e09b7fb2.png)
+![](./media/0b4fed406b391c74a7c2e419e09b7fb2.png)
 
 4. 项目代码：
 
-![图片不存在](./media/c483ebf671dbd5c1e9f4efc12b0162c2.png)
+![](./media/c483ebf671dbd5c1e9f4efc12b0162c2.png)
 
 5. 项目现象：
 
-按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。上传成功后，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/bbd0a6307bdf2ba1504ea4c063c83023.png)图标进入串行监视器，设置波特率为 **9600** ，这样串口监视器不断地打印“Hello World!”。
+按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。上传成功后，利用MicroUSB线连接到计算机上电，单击![](./media/bbd0a6307bdf2ba1504ea4c063c83023.png)图标进入串行监视器，设置波特率为 **9600** ，这样串口监视器不断地打印“Hello World!”。
 
-![图片不存在](./media/11f068278e8204b4c2ba17227870b933.png)
+![](./media/11f068278e8204b4c2ba17227870b933.png)
 
 6. 代码说明
 
-![图片不存在](./media/c7860f54b6b897f155c9afb780cc57bf.png) 
+![](./media/c7860f54b6b897f155c9afb780cc57bf.png) 
 
 设置串口波特率，一般是设置为9600。
 
-![图片不存在](./media/80279f74224f5270f318a4bc8dd1496f.png) 
+![](./media/80279f74224f5270f318a4bc8dd1496f.png) 
 
 换行输出数据。从串行端口输出数据，跟随一个回车和一个换行符。
 
-![图片不存在](./media/f4ac8eed5eae8dd517c720664ee3b54b.png)
+![](./media/f4ac8eed5eae8dd517c720664ee3b54b.png)
 
 将程序的执行暂停一段时间，也就是延时，单位是秒。
 
-![图片不存在](./media/b27d1a837d42dd152f4d8abafd14aa73.png)
+![](./media/b27d1a837d42dd152f4d8abafd14aa73.png)
 
 当启动主板时，将运行代码。
 
-![图片不存在](./media/e235b5781c104c44b7689a114f9c46d7.png)
+![](./media/e235b5781c104c44b7689a114f9c46d7.png)
 
 循环语句，顾名思义就是重复做一件事。
 
@@ -130,45 +130,45 @@ IIC通信端口：A4为SDA，A5为SCL
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |
 |Plus主板*1|面包板*1|红色LED*1|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
+|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1|
 
 3. 元件知识：
 
 **（1）LED**
 
-![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)
+![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)
 
 LED是一种被称为“发光二极管”的半导体，是一种由半导体材料(硅、硒、锗等)制成的电子器件。它有正极和负极。短腿为负极，接GND，长腿为正极，接3.3V或5V。
 
-![图片不存在](./media/cbb16ef4d8cb62a4001d1a05ae3ac615.png)
+![](./media/cbb16ef4d8cb62a4001d1a05ae3ac615.png)
 
 **（2）五色环电阻**
 
 电阻是电路中限制或调节电流流动的电子元件。左边是电阻器的外观，右边是电阻在电路中表示的符号。电阻(R)的单位为欧姆(Ω)，1 mΩ= 1000 kΩ，1kΩ= 1000Ω。
 
-![图片不存在](./media/11d4977d31c6f63993b5f3ac97b4cfb7.png)
+![](./media/11d4977d31c6f63993b5f3ac97b4cfb7.png)
 
 我们可以使用电阻来保护敏感组件，如LED。电阻的强度（以Ω为单位）用小色环标记在电阻器的主体上。每种颜色代表一个数字，你可以用电阻对照卡查找。
 
-![图片不存在](./media/e60472f717ced1cc0bd94f4972ef0cd0.png)
+![](./media/e60472f717ced1cc0bd94f4972ef0cd0.png)
 
 在这个套件中，我们提供了2个具有不同电阻值的五色环电阻。这里以2个五色环电阻为例：
 
 220Ω电阻×10
 
-![图片不存在](./media/951ce7d7778b34bf8fbdb3de1b8c3116.png)
+![](./media/951ce7d7778b34bf8fbdb3de1b8c3116.png)
 
 1KΩ电阻×10
 
-![图片不存在](./media/931d1535563f6d817300f97c0946a01c.png)
+![](./media/931d1535563f6d817300f97c0946a01c.png)
 
 在相同的电压下，会有更小的电流和更大的电阻。电流、电压、电阻之间的联系可以用公式表示：I=U/R。在下图中，目前通过R1的电流: I = U / R = 3 V / 10 KΩ= 0.0003A= 0.3mA。
 
-![图片不存在](./media/8556c6c4feade95fb231c98da873b43c.png)
+![](./media/8556c6c4feade95fb231c98da873b43c.png)
 
 不要把电阻值很低的电阻直接连接在电源两极，这样会使电流过高而损坏电子元件。电阻是没有正负极之分。
 
@@ -176,17 +176,17 @@ LED是一种被称为“发光二极管”的半导体，是一种由半导体�
 
 面包板是实验室中用于搭接电路的重要工具。面包板上有许多孔，可以插入集成电路和电阻等电路元件。熟练掌握面包板的使用方法是提高实验效率，减少实验故障出现几率的重要基础之一。下面就面包板的结构和使用方法做简单介绍。一个典型的面包板如下所示：
 
-![图片不存在](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
+![](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
 
 面包板的外观和内部结构如上图所示，常见的最小单元面包板分上、中、下三部分，上面和下面部分一般是由一行或两行的插孔构成的窄条，中间部分是由中间一条隔离凹槽和上下各5 行的插孔构成的条。
 
-![图片不存在](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
+![](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
 
 在面包板的两个窄条分别有两行插孔，两行之间是不连通的，一般是作为电源引入的通路。上方第一行标有“+”的一行有10组插孔（内部都是连通），均为正极；上方第二行标有“-”的一行有10组插孔，（内部都是连通），均为接地。面包板下方的第一行与第二行结构同上。如需用到整个面包板，通常将“+”与“+”用导线连接起来，“-”与“-”用导线连接起来。
 
 中间部分宽条是由中间一条隔离凹槽和上下各5 行的插孔构成。在同一列中的5 个插孔是互相连通的，列和列之间以及凹槽上下部分则是不连通的。外观及结构如下图：
 
-![图片不存在](./media/3f03942b842afb3b2c7407c8f712d6cd.png)
+![](./media/3f03942b842afb3b2c7407c8f712d6cd.png)
 
 中间部分宽条的连接孔分为上下两部分，是面包板的主工作区，用来插接原件和面包板连接线。在同一列中的5个插孔（即a-b-c-d-e，f-g-h-i-j）是互相连通的；列和列之间以及凹槽上下部分是不连通的。在做实验的时候，通常是使用两窄一宽组成的小单元，在宽条部分搭接电路的主体部分，上面的窄条取一行做电源，下面的窄条取一行做接地。中间宽条用于连接电路，由于凹槽上下是不连通的，所以集成块一般跨插在凹槽上。
 
@@ -194,29 +194,29 @@ LED是一种被称为“发光二极管”的半导体，是一种由半导体�
 
 Plus主板需要3.3V-5V电源，在本项目中，我们通过用MicroUSB线将Plus主板和电脑连起来。
 
-![图片不存在](./media/0b4fed406b391c74a7c2e419e09b7fb2.png)
+![](./media/0b4fed406b391c74a7c2e419e09b7fb2.png)
 
 4. 项目接线图：
 
-![图片不存在](./media/ecd5aa100aba91e096730621de7cd9ed.png)
+![](./media/ecd5aa100aba91e096730621de7cd9ed.png)
 
 5. 项目代码：
 
-![图片不存在](./media/ea5414f04f276210714bb5263a4072f4.png)
+![](./media/ea5414f04f276210714bb5263a4072f4.png)
 
 6. 项目现象：
 
-按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：LED被点亮。
+按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：LED被点亮。
 
-![图片不存在](./media/96672306fbbac2d8b33a55315d0d8fc5.png)
+![](./media/96672306fbbac2d8b33a55315d0d8fc5.png)
 
 7. 代码说明:
 
-![图片不存在](./media/c84c5d3e59635eed39ded41eea09bad4.png)
+![](./media/c84c5d3e59635eed39ded41eea09bad4.png)
 
 向指定引脚设置“输入”或“输出”，选择“输入”代表给该引脚设置输入模式；选择“输出”代表给引脚设置输出模式；选择“输入上拉”代表给该引脚设置输入模式并且使该引脚变成高电平。
 
-![图片不存在](./media/cade6a016199d4689ccf2c70b7faf2cc.png) 
+![](./media/cade6a016199d4689ccf2c70b7faf2cc.png) 
 
 向指定引脚设置“高”或“低”，选择“高”代表给该引脚设置高电平，有电压，有电流，则LED点亮；选择“低”代表给引脚设置低电平，没电压，没有电流，则LED不亮。 
 
@@ -230,37 +230,37 @@ Plus主板需要3.3V-5V电源，在本项目中，我们通过用MicroUSB线将P
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |
 |Plus主板*1|面包板*1|红色LED*1|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
+|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1|
 
 3. 项目接线图：
 
-![图片不存在](./media/ecd5aa100aba91e096730621de7cd9ed.png)
+![](./media/ecd5aa100aba91e096730621de7cd9ed.png)
 
 4. 项目代码：
 
-![图片不存在](./media/eb5558dd539820200152bf1995e7413f.png)
+![](./media/eb5558dd539820200152bf1995e7413f.png)
 
 5. 项目现象：
 
-按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：电路中的LED会反复闪烁。
+按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：电路中的LED会反复闪烁。
 
-![图片不存在](./media/bbd161f32b47a175d78773391bd7b0c1.png)
+![](./media/bbd161f32b47a175d78773391bd7b0c1.png)
 
 6. 代码说明:
 
-![图片不存在](./media/c84c5d3e59635eed39ded41eea09bad4.png) 
+![](./media/c84c5d3e59635eed39ded41eea09bad4.png) 
 
 向指定引脚设置“输入”或“输出”，选择“输入”代表给该引脚设置输入模式；选择“输出”代表给引脚设置输出模式；选择“输入上拉”代表给该引脚设置输入模式并且使该引脚变成高电平。
 
-![图片不存在](./media/cade6a016199d4689ccf2c70b7faf2cc.png) 
+![](./media/cade6a016199d4689ccf2c70b7faf2cc.png) 
 
 向指定引脚设置“高”或“低”，选择“高”代表给该引脚设置高电平，有电压，有电流，则LED点亮；选择“低”代表给引脚设置低电平，没电压，没有电流，则LED不亮。
 
-![图片不存在](./media/f4ac8eed5eae8dd517c720664ee3b54b.png)
+![](./media/f4ac8eed5eae8dd517c720664ee3b54b.png)
 
 将程序的执行暂停一段时间，也就是延时，单位是秒。
 
@@ -274,41 +274,41 @@ Plus主板需要3.3V-5V电源，在本项目中，我们通过用MicroUSB线将P
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/538628fed136c06e104ae01b69774d34.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![](./media/538628fed136c06e104ae01b69774d34.png)|
 | :--: | :--: | :--: |:--: |
 |Plus主板*1|面包板*1|红色LED*1|黄色LED*1|
-|![图片不存在](./media/cede9aadb081f8efbe1aa2884452296f.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
+|![](./media/cede9aadb081f8efbe1aa2884452296f.png)|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
 |绿色LED*1|220Ω电阻*3|面包板连接线若干|MicroUSB线*1|
 
 3. 项目接线图： 
 
-![图片不存在](./media/21400910db1231fcd0ca074d242d1592.png)
+![](./media/21400910db1231fcd0ca074d242d1592.png)
 
 4. 项目代码：
 
-![图片不存在](./media/9115b4c57f06e1d9974263b4e437ea99.png)
+![](./media/9115b4c57f06e1d9974263b4e437ea99.png)
 
 5. 项目现象：
 
-按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，你会看到的现象是：1.首先，绿灯会亮5秒，然后熄灭；2.其次，黄灯会闪烁3次，然后熄灭；3.然后，红灯会亮5秒，然后熄灭；4.继续运行上述1-3个步骤。
+按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，你会看到的现象是：1.首先，绿灯会亮5秒，然后熄灭；2.其次，黄灯会闪烁3次，然后熄灭；3.然后，红灯会亮5秒，然后熄灭；4.继续运行上述1-3个步骤。
 
-![图片不存在](./media/59b566c82c3d60c479292259f545da71.jpg)
+![](./media/59b566c82c3d60c479292259f545da71.jpg)
 
 6. 代码说明:
 
-![图片不存在](./media/c84c5d3e59635eed39ded41eea09bad4.png) 
+![](./media/c84c5d3e59635eed39ded41eea09bad4.png) 
 
 向指定引脚设置“输入”或“输出”，选择“输入”代表给该引脚设置输入模式；选择“输出”代表给引脚设置输出模式；选择“输入上拉”代表给该引脚设置输入模式并且使该引脚变成高电平。
 
-![图片不存在](./media/cade6a016199d4689ccf2c70b7faf2cc.png) 
+![](./media/cade6a016199d4689ccf2c70b7faf2cc.png) 
 
 向指定引脚设置“高”或“低”，选择“高”代表给该引脚设置高电平，有电压，有电流，则LED点亮；选择“低”代表给引脚设置低电平，没电压，没有电流，则LED不亮。
 
-![图片不存在](./media/f4ac8eed5eae8dd517c720664ee3b54b.png)
+![](./media/f4ac8eed5eae8dd517c720664ee3b54b.png)
 
 将程序的执行暂停一段时间，也就是延时，单位是秒。
 
-![图片不存在](./media/e84de0fdd46ce942aadec5fb1ca455a3.png)
+![](./media/e84de0fdd46ce942aadec5fb1ca455a3.png)
 
 有条件的循环控制语句，当满足循环次数时就退出循环，比如：3表示循环执行3次，数字3是可以改成其他数字的。
 
@@ -322,21 +322,21 @@ Plus主板需要3.3V-5V电源，在本项目中，我们通过用MicroUSB线将P
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |
 |Plus主板*1|面包板*1|红色LED*1|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
+|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1|
 
 3. 元件知识：
 
-![图片不存在](./media/e739a6e4a95fa8bbbefb26ef955dc465.png)
+![](./media/e739a6e4a95fa8bbbefb26ef955dc465.png)
 
 **模拟信号 & 数字信号** 
 
 模拟信号在时间和数值上都是连续的信号。相反，数字信号或离散时间信号是由一系列数字组成的时间序列。生活中的大多数信号都是模拟信号，一个熟悉的模拟信号的例子是：全天的温度是连续不断变化的，而不是突然从0到10的瞬间变化。然而，数字信号的值可以瞬间改变。这个变化用数字表示为1和0(二进制代码的基础)。如下图所示，我们可以更容易地看出它们的差异。
 
-![图片不存在](./media/550c1d587189ce5ac3678f44b08ac888.png)
+![](./media/550c1d587189ce5ac3678f44b08ac888.png)
 
 在实际应用中，我们经常使用二进制作为数字信号，即一系列的0和1。由于二进制信号只有两个值(0或1)，因此具有很大的稳定性和可靠性。最后，可以将模拟信号和数字信号相互转换。
 
@@ -344,39 +344,39 @@ Plus主板需要3.3V-5V电源，在本项目中，我们通过用MicroUSB线将P
 
 脉宽调制(PWM)是一种利用数字信号控制模拟电路的有效方法。普通处理器不能直接输出模拟信号。PWM技术使这种转换(将数字信号转换为模拟信号)非常方便。PWM技术利用数字引脚发送一定频率的方波，即高电平和低电平的输出，交替持续一段时间。每一组高电平和低电平的总时间一般是固定的，称为周期(注:周期的倒数是频率)。高电平输出的时间通常称为脉宽，占空比是脉宽(PW)与波形总周期(T)之比的百分比。高电平输出持续时间越长，占空比越长，模拟信号中相应的电压也就越高。下图显示了对应于脉冲宽度0%-100%的模拟信号电压在0V-3.3V(高电平为3.3V)之间的变化情况.
 
-![图片不存在](./media/0c29da4ca7a2fee2f5a0078eacc9e88a.png)
+![](./media/0c29da4ca7a2fee2f5a0078eacc9e88a.png)
 
 PWM占空比越长，输出功率越高。既然我们了解了这种关系，我们就可以用PWM来控制LED的亮度或直流电机的速度等等。从上面可以看出，PWM并不是真实的模拟信号，电压的有效值等于相应的模拟信号。因此，我们可以控制LED和其他输出模块的输出功率，以达到不同的效果。
 
 4. 项目接线图： 
 
-![图片不存在](./media/ecd5aa100aba91e096730621de7cd9ed.png)
+![](./media/ecd5aa100aba91e096730621de7cd9ed.png)
 
 5. 项目代码：
 
-![图片不存在](./media/bc51247693ad09fa977abbc97d3a71f4.png)
+![](./media/bc51247693ad09fa977abbc97d3a71f4.png)
 
 6. 项目现象：
 
-按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用Micro USB线连接到计算机上电，可以看到的现象是：电路中的LED从暗逐渐变亮，再从亮逐渐变暗，就像呼吸一样。
+按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用Micro USB线连接到计算机上电，可以看到的现象是：电路中的LED从暗逐渐变亮，再从亮逐渐变暗，就像呼吸一样。
 
-![图片不存在](./media/7a0d2717b48056cbef36f880212d8e07.png)
+![](./media/7a0d2717b48056cbef36f880212d8e07.png)
 
 7. 代码说明:
 
-![图片不存在](./media/f3bffaedf270e68f2c4920efd2f9d157.png) 
+![](./media/f3bffaedf270e68f2c4920efd2f9d157.png) 
 
 这是创建“<span style="color: rgb(255, 76, 65);">变量</span>”的指令方块，可以声明“全局”或“局部”，还可以设置变量的类型、名称和赋值，item是变量名称。
 
-![图片不存在](./media/6a51ab560400009c41ba232f29837dc4.png) 
+![](./media/6a51ab560400009c41ba232f29837dc4.png) 
 
 获取变量item。
 
-![图片不存在](./media/51b98f6fc4fd78d093462a0ba92d92a6.png)
+![](./media/51b98f6fc4fd78d093462a0ba92d92a6.png)
 
 设置变量item模式为每执行一次循环让item加1或每执行一次循环让item减1。
 
-![图片不存在](./media/e84de0fdd46ce942aadec5fb1ca455a3.png)
+![](./media/e84de0fdd46ce942aadec5fb1ca455a3.png)
 
 有条件的循环控制语句，当满足循环次数时就退出循环，比如：3表示循环执行3次，数字3是可以改成其他数字的。
 
@@ -390,25 +390,25 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |
 |Plus主板*1|面包板*1|红色LED*5|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
+|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
 |220Ω电阻*5|面包板连接线若干|MicroUSB线*1|
 
 3. 项目接线图:
 
-![图片不存在](./media/a140fbaf66bb188a652c2e155ba3aca9.png)
+![](./media/a140fbaf66bb188a652c2e155ba3aca9.png)
 
 4. 项目代码：
 
-![图片不存在](./media/0c07385f3a5c02e3908c2ee6703316e4.png)
+![](./media/0c07385f3a5c02e3908c2ee6703316e4.png)
 
 5. 项目现象：
 
-按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：电路中的5个LED会逐渐亮起来，然后逐渐熄灭，就像电池充电一样。
+按照接线图正确接好各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：电路中的5个LED会逐渐亮起来，然后逐渐熄灭，就像电池充电一样。
 
-![图片不存在](./media/07efa8e5010b2ec37d651afc3d647cc3.jpg)
+![](./media/07efa8e5010b2ec37d651afc3d647cc3.jpg)
 
 6. 代码说明:
 
@@ -424,7 +424,7 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/08cac8e036b616593db2d11a13d7922d.png)|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
 | :--: | :--: | :--: | :--: |
 |Plus主板*1|有源蜂鸣器模块*1|公对母杜邦线若干|MicroUSB线*1|
 
@@ -432,7 +432,7 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 <span style="color: rgb(255, 76, 65);">注意：本教程使用的是有源蜂鸣器。</span>
 
-![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)
+![](./media/08cac8e036b616593db2d11a13d7922d.png)
 
 有源蜂鸣器和无源蜂鸣器的“源”不是指电源，而是指震荡源。
 
@@ -459,17 +459,17 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 <span style="color: rgb(255, 76, 65);">注意：该电路中蜂鸣器的电源为5V。在3.3V的电源下，蜂鸣器可以工作，但会降低响度。</span>
 
-![图片不存在](./media/c3401f343c0135ad033270f33ae7f2f7.png)
+![](./media/c3401f343c0135ad033270f33ae7f2f7.png)
 
 5. 项目代码：
 
-![图片不存在](./media/e2453bbbc3c28bd473c7fe727bdbaab4.png)
+![](./media/e2453bbbc3c28bd473c7fe727bdbaab4.png)
 
 6. 项目现象：
 
-按照接线图正确接好模块，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用USB线连接到计算机上电，可以看到的现象是：有源蜂鸣器发出“滴滴”声。
+按照接线图正确接好模块，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用USB线连接到计算机上电，可以看到的现象是：有源蜂鸣器发出“滴滴”声。
 
-![图片不存在](./media/745ac30f06bd6e2f1b7b82926bca5bc4.jpg)
+![](./media/745ac30f06bd6e2f1b7b82926bca5bc4.jpg)
 
 7. 代码说明:
 
@@ -485,19 +485,19 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/1677c94f2390adeb3df19bfabd6ced88.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/1677c94f2390adeb3df19bfabd6ced88.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|
 | :--: | :--: | :--: |:--: |:--: |
 |Plus主板*1|面包板*1|继电器模块*1|红色LED*1|一字螺丝刀*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|  |
+|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|  |
 |公对母杜邦线若干|MicroUSB线*1|220Ω电阻*1|面包板连接线若干|  |
 
 3. 元件知识：
 
-![图片不存在](./media/1677c94f2390adeb3df19bfabd6ced88.png)
+![](./media/1677c94f2390adeb3df19bfabd6ced88.png)
 
 **继电器：** 继电器能兼容多种单片机控制板，是用小电流去控制大电流运作的一种“自动开关”。它可以让单片机控制板驱动3A以下负载，如LED灯带、直流马达、微型水泵、电磁阀可插拔式接口设计，方便使用。继电器有3个接线柱用于外接电路，分别为NO、COM和NC端（背后丝印）。
 
-![图片不存在](./media/66a8a3f7f871c513156c68de0153722a.png)
+![](./media/66a8a3f7f871c513156c68de0153722a.png)
 
 **模块参数:**
 
@@ -519,7 +519,7 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 **模块原理图:**
 
-![图片不存在](./media/70636a25eed32cf351f7855180697f6e.png)
+![](./media/70636a25eed32cf351f7855180697f6e.png)
 
 一个继电器拥有一个动触点以及两个静触点A和B。
 
@@ -531,7 +531,7 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 继电器简单来说就是一个开关，VCC表示电源正极、GND表示电源负极、IN表示信号输入脚，COM表示公共端，NC（normal close）表示常闭端，NO(normal open)表示常开端。
 
-![图片不存在](./media/cf1d69e712f4408b762672579c12d57c.png)
+![](./media/cf1d69e712f4408b762672579c12d57c.png)
 
 
 4. 项目接线图：
@@ -540,17 +540,17 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 <span style="color: rgb(61, 167, 66);"> **特别注意：** 接线前，需要用一字螺丝刀将继电器模块的NO端口和COM端口处的螺丝扭松，将面包板连接线的一端插入NO端口和COM端口处；接好线后，再用一字螺丝刀将NO端口和COM端口处的螺丝扭紧。</span>
 <br>
 
-![图片不存在](./media/b634817dc26151c7c2df2321a50b37e8.png)
+![](./media/b634817dc26151c7c2df2321a50b37e8.png)
 
 5. 项目代码：
 
-![图片不存在](./media/ea9da54e07915c887deee27e6e5882c5.png)
+![](./media/ea9da54e07915c887deee27e6e5882c5.png)
 
 6. 项目现象：
 
-按照接线图正确接好模块和各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，你会看到的现象是：继电器将循环开与关，开启1秒LED点亮1秒，关闭1秒LED熄灭1秒。同时可以听到继电器开与关的声音，还可以看到继电器上的指示灯指示状态的变化。
+按照接线图正确接好模块和各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，你会看到的现象是：继电器将循环开与关，开启1秒LED点亮1秒，关闭1秒LED熄灭1秒。同时可以听到继电器开与关的声音，还可以看到继电器上的指示灯指示状态的变化。
 
-![图片不存在](./media/3383c24cfcfe548aa0009cdd96705c1c.jpg)
+![](./media/3383c24cfcfe548aa0009cdd96705c1c.jpg)
 
 7. 代码说明:
 
@@ -566,13 +566,13 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/0cb891d41725d75b702317477bd2441f.png)|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|
 | :--: | :--: | :--: |:--: |
 |Plus主板*1|电容触摸传感器模块*1|公对母杜邦线若干|MicroUSB线*1|
 
 3. 元件知识：
 
-![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)
+![](./media/0cb891d41725d75b702317477bd2441f.png)
 
 **电容触摸传感器:** 它主要由1个触摸检测芯片 TTP223-BA6 构成。模块上提供一个触摸按键，功能是用可变面积的按键取代传统按键。当我们上电之后，传感器需要约0.5秒的稳定时间，此时间段内不要触摸按键，此时所有功能都被禁止，始终进行自校准，校准周期约为4秒。
 
@@ -594,7 +594,7 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 **模块原理图:**
 
-![图片不存在](media/56fd49a5552a32ac193119de8cb0a9ad.png)
+![](media/56fd49a5552a32ac193119de8cb0a9ad.png)
 
 TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效。通过 TOG（6）引脚选择直接模式或触发模式。
 
@@ -609,67 +609,67 @@ TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效�
 
 当我们用手指触摸电容触摸传感器模块上的感应区时，信号端 S 输出高电平，板载红色LED点亮。我们通过读取模块上 S 端的高低电平，来判断电容触摸模块上的感应区是否感应到触摸。
 
-![图片不存在](media/ff8f47c71f280326dae5d0585c3a1587.png)
+![](media/ff8f47c71f280326dae5d0585c3a1587.png)
 
 4. 项目接线图：
 
-![图片不存在](./media/1f1a29c49c2984ad5995d595c402a981.png)
+![](./media/1f1a29c49c2984ad5995d595c402a981.png)
 
 5. 项目代码：
 
-![图片不存在](./media/c287c20296dd74ef1578bd3f6f14b880.png)
+![](./media/c287c20296dd74ef1578bd3f6f14b880.png)
 
 6. 项目现象：
 
-按照接线图正确接好模块，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/bbd0a6307bdf2ba1504ea4c063c83023.png)图标进入串行监视器，设置波特率为 **9600** ，当电容触摸传感器模块上的感应区感应到触摸时，板载红色LED灯点亮，value 值为 1，串口监视器打印出“**1  Touch the button**”；当没有感应到触摸时，板载红色LED灯熄灭，value 值为 0，串口监视器打印出“**0  Loosen the button**”。
+按照接线图正确接好模块，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，单击![](./media/bbd0a6307bdf2ba1504ea4c063c83023.png)图标进入串行监视器，设置波特率为 **9600** ，当电容触摸传感器模块上的感应区感应到触摸时，板载红色LED灯点亮，value 值为 1，串口监视器打印出“**1  Touch the button**”；当没有感应到触摸时，板载红色LED灯熄灭，value 值为 0，串口监视器打印出“**0  Loosen the button**”。
 
-![图片不存在](./media/1621ead35e137435b35b3a2dd2b852b9.jpg)
+![](./media/1621ead35e137435b35b3a2dd2b852b9.jpg)
 
-![图片不存在](./media/8a94370c9f0ee44380a4541d030a7f1e.png)
+![](./media/8a94370c9f0ee44380a4541d030a7f1e.png)
 
 7. 代码说明:
 
-![图片不存在](./media/ed4b65c04f99f542e0ef68e3e7d93163.png) 
+![](./media/ed4b65c04f99f542e0ef68e3e7d93163.png) 
 
 定义电容触摸传感器模块的管脚为D3，设置为“输入”模式。
 
-![图片不存在](./media/915d90daa1f26e6f696f906018720691.png)  
+![](./media/915d90daa1f26e6f696f906018720691.png)  
 
-如果![图片不存在](./media/36bbf2acceb1b9f84cee00194f4de142.png)里的表达式为真，则执行“那么”下面的代码。如果![图片不存在](./media/36bbf2acceb1b9f84cee00194f4de142.png)里表达式为假 ，则执行“否则”下面的代码。
+如果![](./media/36bbf2acceb1b9f84cee00194f4de142.png)里的表达式为真，则执行“那么”下面的代码。如果![](./media/36bbf2acceb1b9f84cee00194f4de142.png)里表达式为假 ，则执行“否则”下面的代码。
 
-![图片不存在](./media/1b85fd17a032409f735e343c040b34af.png)   
+![](./media/1b85fd17a032409f735e343c040b34af.png)   
 
-读取电容触摸传感器的数字电平，高(HIGH)或者低(LOW)。如果该引脚未连接任何东西，则![图片不存在](./media/1b85fd17a032409f735e343c040b34af.png) 可以返回“高”或“低”（并且可以随机更改）。
+读取电容触摸传感器的数字电平，高(HIGH)或者低(LOW)。如果该引脚未连接任何东西，则![](./media/1b85fd17a032409f735e343c040b34af.png) 可以返回“高”或“低”（并且可以随机更改）。
 
-![图片不存在](./media/09edc0b5b6c87b0094a5debbbcb88514.png) 
+![](./media/09edc0b5b6c87b0094a5debbbcb88514.png) 
 
 初始化串口通信，并设置波特率为9600。
 
-![图片不存在](./media/d25f4c25a9ab98020fa6a7a6adca6a4f.png) 
+![](./media/d25f4c25a9ab98020fa6a7a6adca6a4f.png) 
 
 未换行输出数据。从串行端口输出数据，跟随一个回车和一个未换行符。
 
-![图片不存在](./media/612f15c16c59c4319a6aaba6837afb25.png)
+![](./media/612f15c16c59c4319a6aaba6837afb25.png)
 
 换行输出数据。从串行端口输出数据，跟随一个回车和一个换行符。 
 
-![图片不存在](./media/f3bffaedf270e68f2c4920efd2f9d157.png) 
+![](./media/f3bffaedf270e68f2c4920efd2f9d157.png) 
 
 这是创建“<span style="color: rgb(255, 76, 65);">变量</span>”的指令方块，可以声明“全局”或“局部”，还可以设置变量的类型、名称和赋值，val是变量名称。
 
-![图片不存在](./media/6a51ab560400009c41ba232f29837dc4.png) 
+![](./media/6a51ab560400009c41ba232f29837dc4.png) 
 
 获取变量val。
 
-![图片不存在](./media/09b83ce7e768fd15b2a4201c610f67fc.png)
+![](./media/09b83ce7e768fd15b2a4201c610f67fc.png)
 
 设置变量val的值。
 
-![图片不存在](./media/50b0c26a692f2d685c2fc4e121925fff.png)
+![](./media/50b0c26a692f2d685c2fc4e121925fff.png)
 
 电容触摸传感器读取数字电平信号输出，并串口不换行打印。
 
-![图片不存在](./media/57e082d9de3b848158e534073e18b317.png) 
+![](./media/57e082d9de3b848158e534073e18b317.png) 
 
 感应区是否感应到触摸，感应区感应到触摸。
 
@@ -683,45 +683,45 @@ TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效�
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/0cb891d41725d75b702317477bd2441f.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |:--: |
 |Plus主板*1|面包板*1|电容触摸传感器模块*1|红色LED*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
 |公对母杜邦线若干|MicroUSB线*1|220Ω电阻*1|面包板连接线若干|
 
 3. 项目接线图：
 
-![图片不存在](./media/864f8c56c8145e248dfecebf5dc7304c.png)
+![](./media/864f8c56c8145e248dfecebf5dc7304c.png)
 
 4. 项目代码：
 
-![图片不存在](./media/61b519e8616a7d39648f6d0951c0b149.png)
+![](./media/61b519e8616a7d39648f6d0951c0b149.png)
 
 5. 项目现象：
 
-按照接线图正确接好模块和各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，你会看到的现象是：当用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，外接LED灯快速闪烁。
+按照接线图正确接好模块和各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，你会看到的现象是：当用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，外接LED灯快速闪烁。
 
-![图片不存在](./media/a46c25a9eb8bec8aec8d68fc03ddbe31.jpg)
+![](./media/a46c25a9eb8bec8aec8d68fc03ddbe31.jpg)
 
 6. 代码说明:
 
-![图片不存在](./media/a5fd7fe89022f8a3f42d10ad3feddaae.png)
+![](./media/a5fd7fe89022f8a3f42d10ad3feddaae.png)
 
 串口打印电容触摸传感器读取的数字电平信号。
 
-![图片不存在](./media/57e082d9de3b848158e534073e18b317.png) 
+![](./media/57e082d9de3b848158e534073e18b317.png) 
 
 感应区是否感应到触摸，感应区感应到触摸。
 
-![图片不存在](./media/5860a23d52095dffec632a1b126e1b24.png) 
+![](./media/5860a23d52095dffec632a1b126e1b24.png) 
 
 设置引脚的模式。“输出”为输出模式；“输入”为输入模式。
 
-![图片不存在](./media/743bad76b1819241bf00a45027e40515.png)
+![](./media/743bad76b1819241bf00a45027e40515.png)
 
 设置引脚的输出电压为高\低电平。“高”为高电平，“低”为低电平。 
 
-![图片不存在](./media/f4ac8eed5eae8dd517c720664ee3b54b.png)
+![](./media/f4ac8eed5eae8dd517c720664ee3b54b.png)
 
 将程序的执行暂停一段时间，也就是延时，单位是秒。 
 
@@ -735,25 +735,25 @@ TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效�
 
 2. 项目元件：
 
-|![图片不存在](./media/fc2db3f45232d5e01df879432330c47e.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![](./media/fc2db3f45232d5e01df879432330c47e.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/0cb891d41725d75b702317477bd2441f.png)|![](./media/08cac8e036b616593db2d11a13d7922d.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |:--: |:--: |
 |Plus主板*1|面包板*1|电容触摸传感器模块*1|有源蜂鸣器模块*1|红色LED*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)| |
+|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/86acd6d2f757c33fd22aee0522c5a2df.png)|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)| |
 |公对母杜邦线若干|MicroUSB线*1|220Ω电阻*1|面包板连接线若干| |
 
 3. 项目接线图：
 
-![图片不存在](./media/507215291b060315c310c62ae67cdf5e.png)
+![](./media/507215291b060315c310c62ae67cdf5e.png)
 
 4. 项目代码：
 
-![图片不存在](./media/63c696a980d211b7a0cc3ec179838dec.png)
+![](./media/63c696a980d211b7a0cc3ec179838dec.png)
 
 5. 项目现象：
 
-按照接线图正确接好模块和各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![图片不存在](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，你会看到的现象是：用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，有源蜂鸣器发出警报，外接LED灯快速闪烁。
+按照接线图正确接好模块和各元器件，选择正确的主板类型Keyes Plus development board和COM端口，点击KidsBlock IDE上的上传按钮![](./media/d89fa73a9e82f0762a7d6bb80fca5752.png)上传代码。项目代码上传成功后，利用MicroUSB线连接到计算机上电，你会看到的现象是：用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，有源蜂鸣器发出警报，外接LED灯快速闪烁。
 
-![图片不存在](./media/2a503c88eaf379aede8d44794aaa5dda.jpg)
+![](./media/2a503c88eaf379aede8d44794aaa5dda.jpg)
 
 6. 代码说明:
 
