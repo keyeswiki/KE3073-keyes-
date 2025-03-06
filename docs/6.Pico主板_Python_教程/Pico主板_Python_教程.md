@@ -4,9 +4,9 @@
 
 ---
 
-1. 简介：
+### 1. 简介：
 
-![](./media/b13caf8cae0ee2d534860d5953a0a4a9.png)
+![图片不存在](./media/b13caf8cae0ee2d534860d5953a0a4a9.png)
 
 在我们开始学习keyes 触摸检测套件之前，首先介绍树莓派Pico主板，它是所有项目的核心。
 
@@ -14,15 +14,15 @@
 
 树莓派Pico主板是一块小小的板子，大小和Arduino Nano 主板差不多，为21mm × 51mm。
 
-![](./media/23017b1ce4b711b2c47c652ed5d24098.png)
+![图片不存在](./media/23017b1ce4b711b2c47c652ed5d24098.png)
 
 树莓派Pico是具有灵活数字接口的低成本高性能微控制器板。它集成了树莓派自己的RP2040微控制器芯片，运行速度高达133 MHz的双核Arm Cortex M0 +处理器，嵌入式264KB SRAM和2MB板载闪存以及26个多功能GPIO引脚。对于软件开发，可以使用树莓派的C/C++SDK或MicroPython。
 
-![](./media/b9bd813b5476d1bc65a0e0561e45a2c6.png)
+![图片不存在](./media/b9bd813b5476d1bc65a0e0561e45a2c6.png)
 
 裸板不带针脚，需要自己焊。这是一块做工精良的电路板，也可以作为SMD元件，直接焊接到印刷电路板上。
 
-![](./media/fc1b8899dba97894a28cf34bed7043ca.png)
+![图片不存在](./media/fc1b8899dba97894a28cf34bed7043ca.png)
 
 主板上最主要的功能是一端的microUSB连接器。它既用于通信，也用于给Raspberry Pi Pico供电。
 
@@ -36,8 +36,8 @@
 - 30个GPIO引脚(26个暴露)。
 - 可支持USB主机或设备模式。
 - 8个可编程I/O（PIO）状态机。
-- 
-![](./media/856331455d5528c6aedb7e1b87c159a5.png)
+
+![图片不存在](./media/856331455d5528c6aedb7e1b87c159a5.png)
 
 树莓派Pico主板是一个3.3V的逻辑器件，但由于内置了电压转换器和稳压器，它可以用一系列电源供电。
 
@@ -53,7 +53,7 @@ VSYS–––这是输入电压，范围为2V至5V。板载电压转换器将为
 
 RUN–––可以启用或禁用RP2040微控制器，也可以将其复位。
 
-![](./media/6c340be47609dc6a0606fc3d147aad4f.png)
+![图片不存在](./media/6c340be47609dc6a0606fc3d147aad4f.png)
 
 树莓派Pico主板上有26个裸露的GPIO连接，它们的排列顺序很好，在GP22和GP26之间有“空隙”（这些“缺失”的引脚在内部使用）。这些引脚都有多种功能，你可以为PWM配置多达16个引脚。有两个I2C总线，两个UART和两个SPI总线，这些可以配置使用多种GPIO引脚。
 
@@ -76,17 +76,17 @@ RUN–––可以启用或禁用RP2040微控制器，也可以将其复位。
 
 ---
 
-2. 原理图：
+### 2. 原理图：
 
-![](./media/82d6ee610dc834e66b69e1dfc3f10e34.png)
+![图片不存在](./media/82d6ee610dc834e66b69e1dfc3f10e34.png)
 
-![](./media/c2b9891a7bfcda49387de592c0879cf2.png)
+![图片不存在](./media/c2b9891a7bfcda49387de592c0879cf2.png)
 
 ---
 
-3. 完整引脚图：
+### 3. 完整引脚图：
 
-![](./media/47ee67fc1ca7cb03e4b2a27626089685.png)
+![图片不存在](./media/47ee67fc1ca7cb03e4b2a27626089685.png)
 
 树莓派也在官网发布了一大堆技术文档，还有一本名为《Get Started with MicroPython on Raspberry Pi Pico》的说明书。它有纸质版，也有PDF版下载。
 
@@ -98,7 +98,7 @@ RUN–––可以启用或禁用RP2040微控制器，也可以将其复位。
 
 ## 2. Thonny IDE 的下载、安装和使用方法
 
-参考链接：[http://wikikeyes-thonny.readthedocs.io/](http://wikikeyes-thonny.readthedocs.io/)
+参考链接：[https://www.keyesrobot.cn/projects/Thonny/zh-cn/latest/](https://www.keyesrobot.cn/projects/Thonny/zh-cn/latest/)
 
 <span style="color: rgb(255, 76, 65);">注意：</span><span style="background:#ff0;color:#000">Pico主板_Python_教程使用的是Pico-Thonny IDE 的下载、安装和使用方法。</span>
 
@@ -108,27 +108,27 @@ RUN–––可以启用或禁用RP2040微控制器，也可以将其复位。
 
 ---
 
-项目01 Hello World
+### 项目01 Hello World
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 对于树莓派Pico初学者，我们将从一些简单的东西开始。在这个项目中，您只需要一个树莓派Pico板和MicroUSB线来完成“Hello World!”项目。它不仅是树莓派Pico板和计算机的通信测试，也是树莓派Pico板的初级项目。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-| ![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)| ![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png) |
+| ![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)| ![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png) |
 | :--: | :--: |
 |树莓派Pico主板*1 | MicroUSB线*1 |
 
-3. 项目接线：
+#### 3. 项目接线：
 
 ①连接microUSB线一端到你的电脑USB口。
 
 ②长按“树莓派Pico主板”上的白色按钮（BOOTSEL）。然后，通过microUSB线另一端将树莓派Pico板与电脑连接。
 
-![](./media/469785ddad60a9a3c9a1e002c32a64b5.png)
+![图片不存在](./media/469785ddad60a9a3c9a1e002c32a64b5.png)
 
-4. 在线运行代码：
+#### 4. 在线运行代码：
 
 要在线运行树莓派Pico，你需要把树莓派Pico主板连接到电脑上。这样就可以使用Thonny软件编译或调试程序。
 
@@ -148,81 +148,81 @@ RUN–––可以启用或禁用RP2040微控制器，也可以将其复位。
 <span style="color: rgb(255, 169, 0);">**基本操作：**</span>
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 3.在新的对话框中，选中“Project_01_HelloWorld.py”,单击“**打开**”。
 
-![](./media/55f0d5d6fad372b4655de5150b51163d.png)
+![图片不存在](./media/55f0d5d6fad372b4655de5150b51163d.png)
 
 
 ```Python
 print("Hello World!")
-print("Welcome to keyes ")
+print("Welcome to Keyestudio")
 ```
 
-5. 项目现象：
+#### 5. 项目现象：
  
-利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：“Shell”窗口打印出“Hello World!”、“Welcome to keyes ”。
+利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：“Shell”窗口打印出“Hello World!”、“Welcome to Keyestudio”。
 
-![](./media/917161f13080342b1d2da97510719861.png)
+![图片不存在](./media/917161f13080342b1d2da97510719861.png)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
 ---
 
-项目02 点亮LED
+### 项目02 点亮LED
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在这个项目中，我们将向你展示点亮LED。我们是使用树莓派Pico主板的数字引脚来打开LED，使LED被点亮。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |
 |树莓派Pico主板*1|面包板*1|红色LED*1|
-|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
+|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
 **（1）LED**
 
-![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)
+![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)
 
 LED是一种被称为“发光二极管”的半导体，是一种由半导体材料(硅、硒、锗等)制成的电子器件。它有正极和负极。短腿为负极，接GND，长腿为正极，接3.3V或5V。
 
-![](./media/cbb16ef4d8cb62a4001d1a05ae3ac615.png)
+![图片不存在](./media/cbb16ef4d8cb62a4001d1a05ae3ac615.png)
 
 **（2）五色环电阻**
 
 电阻是电路中限制或调节电流流动的电子元件。左边是电阻器的外观，右边是电阻在电路中表示的符号。电阻(R)的单位为欧姆(Ω)，1 mΩ= 1000 kΩ，1kΩ= 1000Ω。
 
-![](./media/11d4977d31c6f63993b5f3ac97b4cfb7.png) 
+![图片不存在](./media/11d4977d31c6f63993b5f3ac97b4cfb7.png) 
 
 我们可以使用电阻来保护敏感组件，如LED。电阻的强度（以Ω为单位）用小色环标记在电阻器的主体上。每种颜色代表一个数字，你可以用电阻对照卡查找。
 
-![](./media/e60472f717ced1cc0bd94f4972ef0cd0.png)
+![图片不存在](./media/e60472f717ced1cc0bd94f4972ef0cd0.png)
 
 在这个套件中，我们提供了2个具有不同电阻值的五色环电阻。这里以2个五色环电阻为例：
 
 220Ω电阻×10
 
-![](./media/951ce7d7778b34bf8fbdb3de1b8c3116.png)
+![图片不存在](./media/951ce7d7778b34bf8fbdb3de1b8c3116.png)
 
 1KΩ电阻×10
 
-![](./media/931d1535563f6d817300f97c0946a01c.png)
+![图片不存在](./media/931d1535563f6d817300f97c0946a01c.png)
 
 在相同的电压下，会有更小的电流和更大的电阻。电流、电压、电阻之间的联系可以用公式表示：I=U/R。在下图中，目前通过R1的电流: I = U / R = 3 V / 10 KΩ= 0.0003A= 0.3mA。
 
-![](./media/8556c6c4feade95fb231c98da873b43c.png)
+![图片不存在](./media/8556c6c4feade95fb231c98da873b43c.png)
 
 不要把电阻值很低的电阻直接连接在电源两极，这样会使电流过高而损坏电子元件。电阻是没有正负极之分。
 
@@ -230,17 +230,17 @@ LED是一种被称为“发光二极管”的半导体，是一种由半导体�
 
 面包板是实验室中用于搭接电路的重要工具。面包板上有许多孔，可以插入集成电路和电阻等电路元件。熟练掌握面包板的使用方法是提高实验效率，减少实验故障出现几率的重要基础之一。下面就面包板的结构和使用方法做简单介绍。一个典型的面包板如下所示：
 
-![](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
+![图片不存在](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
 
 面包板的外观和内部结构如上图所示，常见的最小单元面包板分上、中、下三部分，上面和下面部分一般是由一行或两行的插孔构成的窄条，中间部分是由中间一条隔离凹槽和上下各5 行的插孔构成的条。
 
-![](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
+![图片不存在](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
 
 在面包板的两个窄条分别有两行插孔，两行之间是不连通的，一般是作为电源引入的通路。上方第一行标有“+”的一行有10组插孔（内部都是连通），均为正极；上方第二行标有“-”的一行有10组插孔，（内部都是连通），均为接地。面包板下方的第一行与第二行结构同上。如需用到整个面包板，通常将“+”与“+”用导线连接起来，“-”与“-”用导线连接起来。
 
 中间部分宽条是由中间一条隔离凹槽和上下各5 行的插孔构成。在同一列中的5 个插孔是互相连通的，列和列之间以及凹槽上下部分则是不连通的。外观及结构如下图：
 
-![](./media/3f03942b842afb3b2c7407c8f712d6cd.png)
+![图片不存在](./media/3f03942b842afb3b2c7407c8f712d6cd.png)
 
 中间部分宽条的连接孔分为上下两部分，是面包板的主工作区，用来插接原件和面包板连接线。在同一列中的5个插孔（即a-b-c-d-e，f-g-h-i-j）是互相连通的；列和列之间以及凹槽上下部分是不连通的。在做实验的时候，通常是使用两窄一宽组成的小单元，在宽条部分搭接电路的主体部分，上面的窄条取一行做电源，下面的窄条取一行做接地。中间宽条用于连接电路，由于凹槽上下是不连通的，所以集成块一般跨插在凹槽上。
 
@@ -248,29 +248,29 @@ LED是一种被称为“发光二极管”的半导体，是一种由半导体�
 
 树莓派Pico主板需要3.3V-5V电源，在本项目中，我们通过用MicroUSB线将树莓派Pico主板和电脑连起来。
 
-![](./media/469785ddad60a9a3c9a1e002c32a64b5.png)
+![图片不存在](./media/469785ddad60a9a3c9a1e002c32a64b5.png)
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![](./media/c4bc84af30dad8d1997de0ff1b96218a.png)
+![图片不存在](./media/c4bc84af30dad8d1997de0ff1b96218a.png)
 
-5. 在线运行代码：
+#### 5. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_02_Turn_On_LED.py”,单击“**打开**”。
 
-![](./media/4414fc93fdc42eae1b86618eb769c328.png)
+![图片不存在](./media/4414fc93fdc42eae1b86618eb769c328.png)
 
 ```Python
 
@@ -286,16 +286,16 @@ except:
     pass
 ```
 
-6. 项目现象：
+#### 6. 项目现象：
 
-按照接线图正确接好模块，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：LED被点亮。
+按照接线图正确接好模块，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：LED被点亮。
 
-![](./media/96672306fbbac2d8b33a55315d0d8fc5.png)
+![图片不存在](./media/96672306fbbac2d8b33a55315d0d8fc5.png)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
 
-7. 代码说明:
+#### 7. 代码说明:
 
 | 代码                    | 说明                                                         |
 | ----------------------- | ------------------------------------------------------------ |
@@ -305,41 +305,41 @@ except:
 
 ---
 
-项目03 LED闪烁
+### 项目03 LED闪烁
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在这个项目中，我们将向你展示LED闪烁效果。我们是使用树莓派Pico主板的数字引脚来打开LED，让它闪烁。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |
 |树莓派Pico主板*1|面包板*1|红色LED*1|
-|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
+|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1|
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![](./media/c4bc84af30dad8d1997de0ff1b96218a.png)
+![图片不存在](./media/c4bc84af30dad8d1997de0ff1b96218a.png)
 
-4. 在线运行代码：
+#### 4. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_03_LED_Blinking.py”,单击“**打开**”。
 
-![](./media/664637402f457a91c817dc227c43b5f5.png)
+![图片不存在](./media/664637402f457a91c817dc227c43b5f5.png)
 
 ```Python
 from machine import Pin
@@ -357,16 +357,16 @@ except:
     pass
 ```
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，利用USB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：LED闪烁。
+按照接线图正确接好各元器件，利用USB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：LED闪烁。
 
-![](./media/bbd161f32b47a175d78773391bd7b0c1.png)
+![图片不存在](./media/bbd161f32b47a175d78773391bd7b0c1.png)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
 
-6. 代码说明:
+#### 6. 代码说明:
 
 | 代码                    | 说明                                                         |
 | ----------------------- | ------------------------------------------------------------ |
@@ -377,41 +377,41 @@ except:
 
 ---
 
-项目04 交通灯
+### 项目04 交通灯
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 交通灯在我们的日常生活中很普遍。根据一定的时间规律，交通灯是由红、黄、绿三种颜色组成的。每个人都应该遵守交通规则，这可以避免许多交通事故。在这个项目中，我们将使用树莓派Pico主板和一些led(红，黄，绿)来模拟交通灯。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![](./media/538628fed136c06e104ae01b69774d34.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/538628fed136c06e104ae01b69774d34.png)|
 | :--: | :--: | :--: |:--: |
 |树莓派Pico主板*1|面包板*1|红色LED*1|黄色LED*1|
-|![](./media/cede9aadb081f8efbe1aa2884452296f.png)|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
+|![图片不存在](./media/cede9aadb081f8efbe1aa2884452296f.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
 |绿色LED*1|220Ω电阻*3|面包板连接线若干|MicroUSB线*1|
 
-3. 项目接线图： 
+#### 3. 项目接线图： 
 
-![](./media/d671fbbbd6658368a43a3c8001798f80.png)
+![图片不存在](./media/d671fbbbd6658368a43a3c8001798f80.png)
 
-4. 在线运行代码：
+#### 4. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_04_Traffic_Lights.py”,单击“**打开**”。
 
-![](./media/ddd0d4dc6d601180a64bc273013f6138.png)
+![图片不存在](./media/ddd0d4dc6d601180a64bc273013f6138.png)
 
 ```Python
 from machine import Pin
@@ -441,44 +441,45 @@ while True:
     time.sleep(5) 
     led_red.value(0) 
 ```
-5. 项目现象：
 
-按照接线图正确接好各元器件，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：1.首先，绿灯会亮5秒，然后熄灭；2.其次，黄灯会闪烁3次，然后熄灭；3.然后，红灯会亮5秒，然后熄灭；4.继续运行上述1-3个步骤。
+#### 5. 项目现象：
 
-![](./media/abc0a3a86e02ce08c19e49a1136495e0.jpg)
+按照接线图正确接好各元器件，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：1.首先，绿灯会亮5秒，然后熄灭；2.其次，黄灯会闪烁3次，然后熄灭；3.然后，红灯会亮5秒，然后熄灭；4.继续运行上述1-3个步骤。
+
+![图片不存在](./media/abc0a3a86e02ce08c19e49a1136495e0.jpg)
 
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目03的代码说明，这里就不多做介绍了。
 
 ---
 
-项目05 呼吸灯
+### 项目05 呼吸灯
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在之前的研究中，我们知道LED有亮/灭状态，那么如何进入中间状态呢? 如何输出一个中间状态让LED“半亮”? 这就是我们将要学习的。呼吸灯，即LED由灭到亮，再由亮到灭，就像“呼吸”一样。那么，如何控制LED的亮度呢? 我们将使用树莓派Pico主板的PWM来实现这个目标。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |
 |树莓派Pico主板*1|面包板*1|红色LED*1|
-|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
+|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![](./media/e739a6e4a95fa8bbbefb26ef955dc465.png)
+![图片不存在](./media/e739a6e4a95fa8bbbefb26ef955dc465.png)
 
 **模拟信号 & 数字信号** 
 
 模拟信号在时间和数值上都是连续的信号。相反，数字信号或离散时间信号是由一系列数字组成的时间序列。生活中的大多数信号都是模拟信号，一个熟悉的模拟信号的例子是：全天的温度是连续不断变化的，而不是突然从0到10的瞬间变化。然而，数字信号的值可以瞬间改变。这个变化用数字表示为1和0(二进制代码的基础)。如下图所示，我们可以更容易地看出它们的差异。
 
-![](./media/550c1d587189ce5ac3678f44b08ac888.png)
+![图片不存在](./media/550c1d587189ce5ac3678f44b08ac888.png)
 
 在实际应用中，我们经常使用二进制作为数字信号，即一系列的0和1。由于二进制信号只有两个值(0或1)，因此具有很大的稳定性和可靠性。最后，可以将模拟信号和数字信号相互转换。
 
@@ -486,7 +487,7 @@ while True:
 
 脉宽调制(PWM)是一种利用数字信号控制模拟电路的有效方法。普通处理器不能直接输出模拟信号。PWM技术使这种转换(将数字信号转换为模拟信号)非常方便。PWM技术利用数字引脚发送一定频率的方波，即高电平和低电平的输出，交替持续一段时间。每一组高电平和低电平的总时间一般是固定的，称为周期(注:周期的倒数是频率)。高电平输出的时间通常称为脉宽，占空比是脉宽(PW)与波形总周期(T)之比的百分比。高电平输出持续时间越长，占空比越长，模拟信号中相应的电压也就越高。下图显示了对应于脉冲宽度0%-100%的模拟信号电压在0V-3.3V(高电平为3.3V)之间的变化情况.
 
-![](./media/0c29da4ca7a2fee2f5a0078eacc9e88a.png)
+![图片不存在](./media/0c29da4ca7a2fee2f5a0078eacc9e88a.png)
 
 PWM占空比越长，输出功率越高。既然我们了解了这种关系，我们就可以用PWM来控制LED的亮度或直流电机的速度等等。从上面可以看出，PWM并不是真实的模拟信号，电压的有效值等于相应的模拟信号。因此，我们可以控制LED和其他输出模块的输出功率，以达到不同的效果。
 
@@ -494,27 +495,27 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 树莓派Pico主板有16个PWM通道，每个PWM通道可以独立控制频率和占空比，时钟频率范围为7Hz到125MHz。树莓派Pico主板上的16个PWM通道都可以配置为PWM输出。
 
-4. 项目接线图： 
+#### 4. 项目接线图： 
 
-![](./media/c4bc84af30dad8d1997de0ff1b96218a.png)
+![图片不存在](./media/c4bc84af30dad8d1997de0ff1b96218a.png)
 
-5. 在线运行代码：
+#### 5. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_05_Breathing_Led.py”,单击“**打开**”。
 
-![](./media/44edc9a943b8b2bf72f05eadec8020f8.png)
+![图片不存在](./media/44edc9a943b8b2bf72f05eadec8020f8.png)
 
 ```Python
 #MicroPython实现Raspberry Pi Pico板控制LED实现呼吸灯的程序示例
@@ -536,16 +537,16 @@ while True:
         pwm_LED.duty_u16(PWM_PulseWidth)
 ```
 
-6. 项目现象：
+#### 6. 项目现象：
 
-按照接线图正确接好各元器件，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：电路中的LED从暗逐渐变亮，再从亮逐渐变暗，就像呼吸一样。
+按照接线图正确接好各元器件，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：电路中的LED从暗逐渐变亮，再从亮逐渐变暗，就像呼吸一样。
 
-![](./media/7a0d2717b48056cbef36f880212d8e07.png)
+![图片不存在](./media/7a0d2717b48056cbef36f880212d8e07.png)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
 
-7. 代码说明:
+#### 7. 代码说明:
 
 | 代码                    | 说明                                                         |
 | ----------------------- | ------------------------------------------------------------ |
@@ -555,41 +556,41 @@ while True:
 
 ---
 
-项目06 流水灯
+### 项目06 流水灯
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在日常生活中，我们可以看到许多由不同颜色的led组成的广告牌。他们不断地改变灯光(像流水一样)来吸引顾客的注意。在这个项目中，我们将使用树莓派Pico主板控制3个LED灯实现流水的效果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |
 |树莓派Pico主板*1|面包板*1|红色LED*3|
-|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
+|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
 |220Ω电阻*3|面包板连接线若干|MicroUSB线*1|
 
-3. 项目接线图:
+#### 3. 项目接线图:
 
-![](./media/06cded306861551f7d29a20553754922.png)
+![图片不存在](./media/06cded306861551f7d29a20553754922.png)
 
-4. 在线运行代码：
+#### 4. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_06_Flowing_Water_Light.py”,单击“**打开**”。
 
-![](./media/44254ecff7efeb31dce06178293f6e50.png)
+![图片不存在](./media/44254ecff7efeb31dce06178293f6e50.png)
 
 ```Python
 from machine import Pin
@@ -618,16 +619,16 @@ while True:
     showLed()
 ```
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：电路中的3个LED分别从左到右闪烁，然后从右到左闪烁，循环进行。
+按照接线图正确接好各元器件，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：电路中的3个LED分别从左到右闪烁，然后从右到左闪烁，循环进行。
 
-![](./media/6d6ca14a91d4a62805ca975ecf7afa0a.jpg)
+![图片不存在](./media/6d6ca14a91d4a62805ca975ecf7afa0a.jpg)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
 
-6. 代码说明:
+#### 6. 代码说明:
 
 | 代码                    | 说明                                                         |
 | ----------------------- | ------------------------------------------------------------ |
@@ -637,23 +638,23 @@ while True:
 
 ---
 
-项目07 有源蜂鸣器
+### 项目07 有源蜂鸣器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 有源蜂鸣器模块上有一个发声元件----有源蜂鸣器。它被广泛用作电脑、打印机、报警器、电子玩具、电话、计时器等的发声元件。它有一个内在的振动源，需连接3.3V~5V电源，即可持续发出嗡嗡声。在这个项目中，我们将使用树莓派Pico主板控制有源蜂鸣器发出“滴滴”声。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/08cac8e036b616593db2d11a13d7922d.png)|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
 | :--: | :--: | :--: | :--: | :--: |
 |树莓派Pico主板*1|面包板*1|有源蜂鸣器模块*1|公对母杜邦线若干|MicroUSB线*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
 <span style="color: rgb(255, 76, 65);">注意：本教程使用的是有源蜂鸣器。</span>
 
-![](./media/08cac8e036b616593db2d11a13d7922d.png)
+![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)
 
 有源蜂鸣器和无源蜂鸣器的“源”不是指电源，而是指震荡源。
 
@@ -676,29 +677,29 @@ while True:
 **总结：有源蜂鸣器内部带震荡源，发声频率固定。无源内部不带震荡源，通过方波去驱动，发音频率可改变。**
 
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
 <span style="color: rgb(255, 76, 65);">注意：该电路中蜂鸣器的电源为5V。在3.3V的电源下，蜂鸣器可以工作，但会降低响度。</span>
 
-![](./media/11e6559af97b3306bdf7fdc3d1c6a600.png)
+![图片不存在](./media/11e6559af97b3306bdf7fdc3d1c6a600.png)
 
-5. 在线运行代码：
+#### 5. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_07_Active_Buzzer.py”,单击“**打开**”。
 
-![](./media/b3027d63b882e65e8affd62185eae5ee.png)
+![图片不存在](./media/b3027d63b882e65e8affd62185eae5ee.png)
 
 ```Python
 from machine import Pin
@@ -716,13 +717,13 @@ except:
     pass
 ```
 
-6. 项目现象：
+#### 6. 项目现象：
 
-按照接线图正确接好模块，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：有源蜂鸣器发出“滴滴”声。
+按照接线图正确接好模块，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：有源蜂鸣器发出“滴滴”声。
 
-![](./media/2338afa1daee4f19b2358e75088284b5.jpg)
+![图片不存在](./media/2338afa1daee4f19b2358e75088284b5.jpg)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
 7. 代码说明:
 
@@ -730,27 +731,27 @@ except:
 
 ---
 
-项目08 继电器控制LED
+### 项目08 继电器控制LED
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在日常生活中，我们一般使用交流来驱动电气设备，有时我们会用开关来控制电器。如果将开关直接连接到交流电路上，一旦发生漏电，人就有危险。从安全的角度考虑，我们特别设计了这款具有NO(常开)端和NC(常闭)端的继电器模块。在这节课我们将学习一个比较特殊、好用的开关，就是继电器模块，使用继电器模块控制LED灯亮灭。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/1677c94f2390adeb3df19bfabd6ced88.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/1677c94f2390adeb3df19bfabd6ced88.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|
 | :--: | :--: | :--: |:--: |:--: |
 |树莓派Pico主板*1|面包板*1|继电器模块*1|红色LED*1|一字螺丝刀*1|
-|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)| |
+|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)| |
 |公对母杜邦线若干|MicroUSB线*1|220Ω电阻*1|面包板连接线若干| |
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![](./media/1677c94f2390adeb3df19bfabd6ced88.png)
+![图片不存在](./media/1677c94f2390adeb3df19bfabd6ced88.png)
 
 **继电器：** 继电器能兼容多种单片机控制板，是用小电流去控制大电流运作的一种“自动开关”。它可以让单片机控制板驱动3A以下负载，如LED灯带、直流马达、微型水泵、电磁阀可插拔式接口设计，方便使用。继电器有3个接线柱用于外接电路，分别为NO、COM和NC端（背后丝印）。
 
-![](./media/66a8a3f7f871c513156c68de0153722a.png)
+![图片不存在](./media/66a8a3f7f871c513156c68de0153722a.png)
 
 **模块参数:**
 
@@ -772,7 +773,7 @@ except:
 
 **模块原理图:**
 
-![](./media/70636a25eed32cf351f7855180697f6e.png)
+![图片不存在](./media/70636a25eed32cf351f7855180697f6e.png)
 
 一个继电器拥有一个动触点以及两个静触点A和B。
 
@@ -784,34 +785,34 @@ except:
 
 继电器简单来说就是一个开关，VCC表示电源正极、GND表示电源负极、IN表示信号输入脚，COM表示公共端，NC（normal close）表示常闭端，NO(normal open)表示常开端。
 
-![](./media/cf1d69e712f4408b762672579c12d57c.png)
+![图片不存在](./media/cf1d69e712f4408b762672579c12d57c.png)
 
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
 <br>
 <span style="color: rgb(61, 167, 66);"> **特别注意：** 接线前，需要用一字螺丝刀将继电器模块的NO端口和COM端口处的螺丝扭松，将面包板连接线的一端插入NO端口和COM端口处；接好线后，再用一字螺丝刀将NO端口和COM端口处的螺丝扭紧。</span>
 <br>
 
-![](./media/db195797cd494f802fb36482ee638392.png)
+![图片不存在](./media/db195797cd494f802fb36482ee638392.png)
 
-5. 在线运行代码：
+#### 5. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_08_Relay_Control_LED.py”,单击“**打开**”。
 
-![](./media/4781509d13c84554f17de30231a14bbc.png)
+![图片不存在](./media/4781509d13c84554f17de30231a14bbc.png)
 
 ```Python
 from machine import Pin
@@ -835,35 +836,36 @@ while True:
     relay_off()
     time.sleep(1)
 ```
-6. 项目现象：
 
-按照接线图正确接好模块和各元器件，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：继电器将循环开与关，开启1秒LED点亮1秒，关闭1秒LED熄灭1秒。同时可以听到继电器开与关的声音，还可以看到继电器上的指示灯指示状态的变化。
+#### 6. 项目现象：
 
-![](./media/6d0d58af8300037df526393577acd0b1.jpg)
+按照接线图正确接好模块和各元器件，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：继电器将循环开与关，开启1秒LED点亮1秒，关闭1秒LED熄灭1秒。同时可以听到继电器开与关的声音，还可以看到继电器上的指示灯指示状态的变化。
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+![图片不存在](./media/6d0d58af8300037df526393577acd0b1.jpg)
 
-7. 代码说明:
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+
+#### 7. 代码说明:
 
 可以参照项目03和项目06的代码说明，这里就不多做介绍了。
 
 ---
 
-项目09 电容触摸传感器
+### 项目09 电容触摸传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在本项目中，通过读取电容触摸传感器模块上S端高低电平，判断是否触摸传感器的感应区，并且在Shell窗口中显示测试结果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/0cb891d41725d75b702317477bd2441f.png)|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
 | :--: | :--: | :--: |:--: |:--: |
 |树莓派Pico主板*1|面包板*1|电容触摸传感器模块*1|公对母杜邦线若干|MicroUSB线*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![](./media/0cb891d41725d75b702317477bd2441f.png)
+![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)
 
 **电容触摸传感器:** 它主要由1个触摸检测芯片 TTP223-BA6 构成。模块上提供一个触摸按键，功能是用可变面积的按键取代传统按键。当我们上电之后，传感器需要约0.5秒的稳定时间，此时间段内不要触摸按键，此时所有功能都被禁止，始终进行自校准，校准周期约为4秒。
 
@@ -885,7 +887,7 @@ while True:
 
 **模块原理图:**
 
-![](media/56fd49a5552a32ac193119de8cb0a9ad.png)
+![图片不存在](media/56fd49a5552a32ac193119de8cb0a9ad.png)
 
 TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效。通过 TOG（6）引脚选择直接模式或触发模式。
 
@@ -900,29 +902,29 @@ TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效�
 
 当我们用手指触摸电容触摸传感器模块上的感应区时，信号端 S 输出高电平，板载红色LED点亮。我们通过读取模块上 S 端的高低电平，来判断电容触摸模块上的感应区是否感应到触摸。
 
-![](media/ff8f47c71f280326dae5d0585c3a1587.png)
+![图片不存在](media/ff8f47c71f280326dae5d0585c3a1587.png)
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![](./media/3959b0aa3a62550e8a1cf133cde7d600.png)
+![图片不存在](./media/3959b0aa3a62550e8a1cf133cde7d600.png)
 
-5. 在线运行代码：
+#### 5. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_09_Touch_Sensor.py”,单击“**打开**”。
 
-![](./media/137d0e85faf2cc62f8370b42b6bc1ec2.png)
+![图片不存在](./media/137d0e85faf2cc62f8370b42b6bc1ec2.png)
 
 ```Python
 from machine import Pin
@@ -939,18 +941,18 @@ while True:
     time.sleep(0.1)
 ```
 
-6. 项目现象：
+#### 6. 项目现象：
 
-按照接线图正确接好模块，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：当电容触摸传感器模块上的感应区感应到触摸时，板载红色LED灯点亮，value 值为 1，Shell窗口中打印出“**1  Touch the button**”。否则，当没有感应到触摸时，板载红色LED灯熄灭，value 值为 0，Shell窗口中打印出“**0  Loosen the button**”。
+按照接线图正确接好模块，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：当电容触摸传感器模块上的感应区感应到触摸时，板载红色LED灯点亮，value 值为 1，Shell窗口中打印出“**1  Touch the button**”。否则，当没有感应到触摸时，板载红色LED灯熄灭，value 值为 0，Shell窗口中打印出“**0  Loosen the button**”。
 
-![](./media/6a9b2e604edded302b1e5010e864a3ba.jpg)
+![图片不存在](./media/6a9b2e604edded302b1e5010e864a3ba.jpg)
 
-![](./media/b6d147801db9b19ca59dbf0daada3e4a.png)
+![图片不存在](./media/b6d147801db9b19ca59dbf0daada3e4a.png)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
 
-7. 代码说明:
+#### 7. 代码说明:
 
 | 代码                                 | 说明                                                         |
 | ------------------------------------ | ------------------------------------------------------------ |
@@ -960,41 +962,41 @@ while True:
 
 ---
 
-项目10 电容触摸传感器控制LED
+### 项目10 电容触摸传感器控制LED
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 上一项目中我们已经学习了电容触摸传感器的工作原理，这一项目中我们将电容触摸传感器和LED灯组合实验，实现电容触摸传感器模块上的感应区感应到触摸时LED快速闪烁的效果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/0cb891d41725d75b702317477bd2441f.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |:--: |
 |树莓派Pico主板*1|面包板*1|电容触摸传感器模块*1|红色LED*1|
-|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
 |公对母杜邦线若干|MicroUSB线*1|220Ω电阻*1|面包板连接线若干|
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![](./media/8e7fe0adc00231f6e94a0646ca462d01.png)
+![图片不存在](./media/8e7fe0adc00231f6e94a0646ca462d01.png)
 
-4. 在线运行代码：
+#### 4. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_10_Touch_Control_LED.py”,单击“**打开**”。
 
-![](./media/c79884ed482d6a4c223bfe0afb6a267c.png)
+![图片不存在](./media/c79884ed482d6a4c223bfe0afb6a267c.png)
 
 ```Python
 #导入引脚和时间模块
@@ -1017,56 +1019,56 @@ while True:
           led.value(0)
 ```
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好模块和各元器件，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，外接LED灯快速闪烁，同时Shell窗口中显示“1  ALARM! Touch detected!”。
+按照接线图正确接好模块和各元器件，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，外接LED灯快速闪烁，同时Shell窗口中显示“1  ALARM! Touch detected!”。
 
-![](./media/7829a89d11209d53d25feab1418818c7.jpg)
+![图片不存在](./media/7829a89d11209d53d25feab1418818c7.jpg)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目09的代码说明，这里就不多做介绍了。
 
 ---
 
-项目11 触摸检测报警系统
+### 项目11 触摸检测报警系统
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 前面的项目中我们已经学习了电容触摸传感器的工作原理和电容触摸传感器控制LED灯快速闪烁的效果。那么，在本项目中，我们将结合电容触摸传感器、有源蜂鸣器和LED灯来模拟触摸检测报警系统。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![](./media/0cb891d41725d75b702317477bd2441f.png)|![](./media/08cac8e036b616593db2d11a13d7922d.png)|![](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![图片不存在](./media/d12071168fd2fd07dcd66e4a187d91bd.png)|![图片不存在](./media/3eb806e0acb028c1b242da3b85c44e58.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
 | :--: | :--: | :--: |:--: |:--: |
 |树莓派Pico主板*1|面包板*1|电容触摸传感器模块*1|有源蜂鸣器模块*1|红色LED*1|
-|![](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)| |
+|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)| |
 |公对母杜邦线若干|MicroUSB线*1|220Ω电阻*1|面包板连接线若干| |
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![](./media/1b55a033a7950d7497625950b99794e5.png)
+![图片不存在](./media/1b55a033a7950d7497625950b99794e5.png)
 
-4. 在线运行代码：
+#### 4. 在线运行代码：
 
 **<span style="color: rgb(255, 76, 65); font-size: 24px;">特别注意：</span>本教程中使用的代码保存的路径为：“...\代码集\6.Pico主板_Python_教程”中。**
 
 <br>
 
-1.打开Thonny软件，并且单击![](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
+1.打开Thonny软件，并且单击![图片不存在](./media/de77de1c3006b25f2a8f3dfcec326cdb.png)“**打开...**”。
 
-![](./media/565460487c3320082e701bdee073d80a.png)
+![图片不存在](./media/565460487c3320082e701bdee073d80a.png)
 
 2.在新弹出的窗口中，点击“**此电脑**”。
 
-![](./media/71610ed1493df98c5a364767d2a9abae.png)
+![图片不存在](./media/71610ed1493df98c5a364767d2a9abae.png)
 
 在新的对话框中，选中“Project_11_Touch_Detection_Alarm_System.py”,单击“**打开**”。
 
-![](./media/7db0a61cd3b37371a8e70c29596d514c.png)
+![图片不存在](./media/7db0a61cd3b37371a8e70c29596d514c.png)
 
 ```Python
 #导入引脚和时间模块
@@ -1093,15 +1095,15 @@ while True:
           led.value(0)
 ```
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好模块和各元器件，利用MicroUSB线连接到计算机上电，单击![](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，有源蜂鸣器发出警报，外接LED灯快速闪烁，同时Shell窗口中显示“1  ALARM! Touch detected!”。
+按照接线图正确接好模块和各元器件，利用MicroUSB线连接到计算机上电，单击![图片不存在](./media/4ac0a5cec03a20e095f56686af2e4c0c.png)来执行程序代码。代码开始执行，你会看到的现象是：用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，有源蜂鸣器发出警报，外接LED灯快速闪烁，同时Shell窗口中显示“1  ALARM! Touch detected!”。
 
-![](./media/b62f3b1e7597674d7f6292f77481dfa8.jpg)
+![图片不存在](./media/b62f3b1e7597674d7f6292f77481dfa8.jpg)
 
-当在线运行时，单击![](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
+当在线运行时，单击![图片不存在](./media/e869de8fa07192f0c3c4b6e8688cfca7.png)或按Ctrl+C退出程序。
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目09和项目03的代码说明，这里就不多做介绍了。
 
